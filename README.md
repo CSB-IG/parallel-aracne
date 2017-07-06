@@ -70,7 +70,7 @@ bin/target-sifs | xargs mk
 
     ```
     #!/bin/sh
-    /path/to/aracne2 -H "@"
+    /path/to/aracne2 -H /path/to/aracne2/dir "$@"
     ```
 
     We use aracne 2 as published as of march 2017:
