@@ -8,7 +8,22 @@ You should transform your files to the format required for further analyses.
 
 # Running a job
 
-You should add to the `data` directory your files
+1.  Make a directory named `data`:
+
+```
+mkdir data
+```
+
+2.  Open `R` in this directory.
+
+3.  If not done automatically, run on your R console:
+
+```
+packrat::restore()
+q("no")
+```
+
+4. You should add to the `data` directory your files
 containing the expression matrices in the format:
 
 ```
@@ -19,7 +34,7 @@ genes <tab> sample1 <tab> ... <tab> sample_n
 
 - The expression matrix filename(s) must end with `.txt`
 
-Then execute:
+5. Run the analysis.
 
 ```
 bin/targets | xargs mk
